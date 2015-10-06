@@ -1,9 +1,11 @@
+package main.java;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 
-@WebFilter(filterName = "Filter")
+@WebFilter("/foo.world")
 public class Filter implements javax.servlet.Filter {
     public void destroy() {
     }
